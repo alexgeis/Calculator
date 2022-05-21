@@ -7,7 +7,50 @@ function setCalcDisplay(newDisplay) {
   console.log(currentDisplay);
 }
 
+// -- DOM SELECTORS
+//DISPLAY
 const calcDisplay = document.querySelector("#calc-display");
+//FUNCTIONS
+const clearBtn = document.querySelector("#clear-btn");
+const plusMinusBtn = document.querySelector("#plus-minus-btn");
+const moduloBtn = document.querySelector("#modulo-btn");
+const divideBtn = document.querySelector("#divide-btn");
+const multiplyBtn = document.querySelector("#multiply-btn");
+const minusBtn = document.querySelector("#minus-btn");
+const plusBtn = document.querySelector("#plus-btn");
+const decimalBtn = document.querySelector("#decimal-btn");
+const equalBtn = document.querySelector("#equal-btn");
+//NUMBERS
+const nineBtn = document.querySelector("#nine-btn");
+const eightBtn = document.querySelector("#eight-btn");
+const sevenBtn = document.querySelector("#seven-btn");
+const sixBtn = document.querySelector("#six-btn");
+const fiveBtn = document.querySelector("#five-btn");
+const fourBtn = document.querySelector("#four-btn");
+const threeBtn = document.querySelector("#three-btn");
+const twoBtn = document.querySelector("#two-btn");
+const oneBtn = document.querySelector("#one-btn");
+const zeroBtn = document.querySelector("#zero-btn");
+
+clearBtn.onclick = () => clearDisplay();
+plusMinusBtn.onclick = () => posNegOperator();
+moduloBtn.onclick = () => addModuloOperator();
+divideBtn.onclick = () => addDivideOperator();
+multiplyBtn.onclick = () => addMultiplyOperator();
+minusBtn.onclick = () => addMinusOperator();
+plusBtn.onclick = () => addPlusOperator();
+decimalBtn.onclick = () => addDecimal();
+equalBtn.onclick = () => evaluate();
+//NUMBERS
+nineBtn.onclick = (e) => enter9(e.target.value);
+eightBtn.onclick = (e) => enter8(e.target.value);
+sevenBtn.onclick = (e) => enter7(e.target.value);
+sixBtn.onclick = (e) => enter6(e.target.value);
+fiveBtn.onclick = (e) => enter5(e.target.value);
+fourBtn.onclick = (e) => enter4(e.target.value);
+threeBtn.onclick = (e) => enter3(e.target.value);
+twoBtn.onclick = (e) => enter2(e.target.value);
+oneBtn.onclick = (e) => enter1(e.target.value);
 
 startBtn.onclick = () => runGame();
 resetBtn.onclick = () => clearScore();
@@ -15,85 +58,6 @@ document.body.onkeydown = (e) => setCurrentKey(e.key);
 
 //listen for keyDown events to capture key value event.key
 
-let words = ["Javascript", "concatenation", "recursive"];
-
-function runGame() {
-  renderWord();
-  startTimer();
-  /*
-DONE -start timer
--pull word from array
--.split("") to create array from string
--modify word with random blanks
---number of blanks =
-word.length < 6 = 2
-word.length < 10 = 3
-word.length < 15 = 4
-word.length > 15 = 5
---Math.floor(Math.random()*word.length-1) <- have to do this for amount of blanks
---replace random indecies of word with blanks
---.join(" ")
-
-*/
-}
-
-function renderWord() {
-  //choose word -> make into array
-  const randomWordIndex = Math.floor(Math.random() * (words.length - 1));
-  let gameWordArr = words[randomWordIndex].split(""); // ["j","a",etc.]
-  //determine number of blanks needed
-  let blanks = 0
-  gameWordArr.length < 6 ? blanks = 2 :
-  gameWordArr.length < 10 ? blanks = 3 :
-  gameWordArr.length < 14 ? blanks = 4 :
-  blanks = 5
-  //generate random indeces to replace with blanks - max 5 needed
-  const randomBlankIndex1 = Math.floor(Math.random()*(gameWordArr.length-1))  
-  const randomBlankIndex2 = Math.floor(Math.random()*(gameWordArr.length-1))  
-  const randomBlankIndex3 = Math.floor(Math.random()*(gameWordArr.length-1))  
-  const randomBlankIndex4 = Math.floor(Math.random()*(gameWordArr.length-1))  
-  const randomBlankIndex5 = Math.floor(Math.random()*(gameWordArr.length-1)) 
-  if ()
-  
-
-  //iterate over gameWordArr and replace values at random indeces with 
-  if (blanks ===5){
-    const blankWordArr = gameWordArr.map((letter)=>{
-
-    })
-  }
-  
-}
-
-function startTimer() {
-  let timerInterval = setInteval(() => {
-    currentCountdown--;
-    timer.textContent = `${currentCountdown}`;
-
-    if (currentCountdown === 1) {
-      timerText.textContent = `second remaining`;
-    }
-
-    if (currentCountdown === 0) {
-      timerText.textContent = `seconds remaining`;
-      clearInterval(timerInterval);
-    }
-  }, 1000);
-}
-
-function endGame() {
-  //Win
-  const newWins = currentWins++;
-  setCurrentWins(newWins);
-
-  //Lose
-  const newLosses = currentLosses++;
-  setCurrentLosses(newLosses);
-}
-
 window.onload = () => {
-  setCurrentKey(DEFAULT_KEY);
-  setCurrentWins(DEFAULT_WINS);
-  setCurrentLosses(DEFAULT_LOSSES);
-  setCurrentCountdown(DEFAULT_COUNTDOWN);
+  setCalcDisplay(DEFAULT_DISPLAY);
 };

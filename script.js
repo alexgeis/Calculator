@@ -52,11 +52,8 @@ threeBtn.onclick = (e) => enter3(e.target.value);
 twoBtn.onclick = (e) => enter2(e.target.value);
 oneBtn.onclick = (e) => enter1(e.target.value);
 
-startBtn.onclick = () => runGame();
-resetBtn.onclick = () => clearScore();
-document.body.onkeydown = (e) => setCurrentKey(e.key);
-
-//listen for keyDown events to capture key value event.key
+// TO USE FOR KEYBOARD INPUT
+// document.body.onkeydown = (e) => setCurrentKey(e.key);
 
 window.onload = () => {
   setCalcDisplay(DEFAULT_DISPLAY);

@@ -24,8 +24,24 @@ body {
   font-family: 'Didot', serif;
   /* footer support */
   margin-bottom: 100px;
+  display: flex;
+  flex-direction: column;
 }
 
+#header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  color: white;
+  background-color: var(--primary-dark);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 
 

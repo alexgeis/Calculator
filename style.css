@@ -43,7 +43,11 @@ body {
   align-items: center;
 }
 
-
+#calc-container {
+  margin: 80px auto;
+  padding: 20px;
+  background-color: var(--primary-dark);
+}
 
 /* FOOTER */
 .footer {

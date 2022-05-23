@@ -49,6 +49,13 @@ body {
   background-color: var(--primary-dark);
 }
 
+#Calculator {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5px;
+  grid-auto-rows: minmax(50px, auto);
+}
+
 /* FOOTER */
 .footer {
   position: absolute;

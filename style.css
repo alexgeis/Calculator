@@ -44,6 +44,7 @@ body {
 }
 
 #calc-container {
+  width: 400px;
   margin: 80px auto;
   padding: 20px;
   background-color: var(--primary-dark);
@@ -59,6 +60,7 @@ body {
 #calc-display {
   background-color: var(--primary-light);
   grid-column: 1 / 5;
+  text-align: right;
 }
 
 
@@ -89,4 +91,13 @@ body {
 
 .footer img:hover {
   transform: rotate(360deg) scale(1.2);
+}
+
+@media (max-width: 500px) {
+  #calc-container {
+    width: 80%;
+  }
+  #Calculator {
+    min-width: 30px;
+  }
 }

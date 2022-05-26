@@ -3,8 +3,8 @@ DEFAULT_DISPLAY = 0;
 let currentDisplay = DEFAULT_DISPLAY;
 
 function setCalcDisplay(newDisplay) {
-  currentDisplay = newDisplay;
-  console.log(currentDisplay);
+	currentDisplay = newDisplay;
+	console.log(currentDisplay);
 }
 
 // -- DOM SELECTORS
@@ -52,9 +52,47 @@ threeBtn.onclick = (e) => enter3(e.target.value);
 twoBtn.onclick = (e) => enter2(e.target.value);
 oneBtn.onclick = (e) => enter1(e.target.value);
 
+//Math functions
+function add(a, b) {
+	return parseFloat(a) + parseFloat(b);
+}
+function subtract(a, b) {
+	return parseFloat(a) - parseFloat(b);
+}
+function multiply(a, b) {
+	return parseFloat(a) * parseFloat(b);
+}
+function divide(a, b) {
+	if (b != "0") {
+		return parseFloat(a) / parseFloat(b);
+	} else {
+		alert("Division by zero ain't gonna fly!");
+		clearBtn.click();
+	}
+}
+
+//applying math operators
+function operate(operator, firstArg, secondArg) {
+	switch (operator) {
+		case "+":
+			return add(firstArg, secondArg);
+			break;
+		case "-":
+			return subtract(firstArg, secondArg);
+			break;
+		case "x":
+			return multiply(firstArg, secondArg);
+			break;
+		case "*":
+			return multiply(firstArg, secondArg);
+		case "/":
+			return divide(firstArg, secondArg);
+			break;
+	}
+}
 // TO USE FOR KEYBOARD INPUT
 // document.body.onkeydown = (e) => setCurrentKey(e.key);
 
 window.onload = () => {
-  setCalcDisplay(DEFAULT_DISPLAY);
+	setCalcDisplay(DEFAULT_DISPLAY);
 };

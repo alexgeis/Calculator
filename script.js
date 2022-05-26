@@ -11,15 +11,12 @@ function setCalcDisplay(newDisplay) {
 //DISPLAY
 const calcDisplay = document.querySelector("#calc-display");
 //FUNCTIONS
-const clearBtn = document.querySelector("#clear-btn");
-const plusMinusBtn = document.querySelector("#plus-minus-btn");
 const moduloBtn = document.querySelector("#modulo-btn");
 const divideBtn = document.querySelector("#divide-btn");
 const multiplyBtn = document.querySelector("#multiply-btn");
 const minusBtn = document.querySelector("#minus-btn");
 const plusBtn = document.querySelector("#plus-btn");
-const decimalBtn = document.querySelector("#decimal-btn");
-const equalBtn = document.querySelector("#equal-btn");
+
 //NUMBERS
 const nineBtn = document.querySelector("#nine-btn");
 const eightBtn = document.querySelector("#eight-btn");
@@ -100,6 +97,7 @@ function operate(operator, firstArg, secondArg) {
 const firstOperandSpan = document.getElementById("firstOperand");
 const operatorSpan = document.getElementById("operator");
 const secondOperandSpan = document.getElementById("secondOperand");
+const answerSpan = document.getElementById("answer");
 
 function updateOperands(value) {
 	if (operatorSpan.textContent == "") {
@@ -133,19 +131,86 @@ function updateOperator(value) {
 			)
 		);
 		firstOperandSpan.textContent = meanwhile;
-		answerZone.textContent = meanwhile;
+		answerSpan.textContent = meanwhile;
 		operatorSpan.textContent = value;
 		secondOperandSpan.textContent = "";
-		checkIfEvilAll();
 	} else if (
 		firstOperandSpan.textContent == "" &&
-		answerZone.textContent != ""
+		answerSpan.textContent != ""
 	) {
-		firstOperandSpan.textContent = answerZone.textContent;
+		firstOperandSpan.textContent = answerSpan.textContent;
 		operatorSpan.textContent = value;
-		checkIfEvilAll();
 	}
 }
+
+const equalBtn = document.querySelector("#equal-btn");
+
+function roundTo5decimalsMax(halfProduct) {
+	halfProduct *= 100000;
+	halfProduct = Math.round(halfProduct);
+	return halfProduct / 100000;
+}
+
+eqlBtn.onclick = function () {
+	if (
+		firstOperandSpan.textContent != "" &&
+		operatorSpan.textContent != "" &&
+		secondOperandSpan.textContent != ""
+	) {
+		let answer = roundTo5decimalsMax(
+			operate(
+				operatorSpan.textContent,
+				firstOperandSpan.textContent,
+				secondOperandSpan.textContent
+			)
+		);
+		answerSpan.textContent = answer;
+		firstOperandSpan.textContent = "";
+		operatorSpan.textContent = "";
+		secondOperandSpan.textContent = "";
+	} else {
+		console.log("Try entering something...");
+	}
+};
+
+const clearBtn = document.querySelector("#clear-btn");
+
+clearBtn.onclick = function () {
+	firstOperandSpan.textContent = "";
+	operatorSpan.textContent = "";
+	secondOperandSpan.textContent = "";
+	answerSpan.textContent = "";
+};
+
+const decimalBtn = document.querySelector("#decimal-btn");
+decimalBtn.onclick = function () {
+	if (firstOperandSpan.textContent == "") {
+		firstOperandSpan.textContent += "0.";
+	} else if (
+		firstOperandSpan.textContent != "" &&
+		operatorSpan.textContent == ""
+	) {
+		let sanityCheck = firstOperandSpan.textContent.split("");
+		if (!sanityCheck.includes(".")) {
+			console.log(sanityCheck);
+			firstOperandSpan.textContent += ".";
+		}
+	} else if (
+		operatorSpan.textContent != "" &&
+		secondOperandSpan.textContent == ""
+	) {
+		secondOperandSpan.textContent += "0.";
+	} else {
+		let sanityCheck = secondOperandSpan.textContent.split("");
+		if (!sanityCheck.includes(".")) {
+			secondOperandSpan.textContent += ".";
+		}
+	}
+};
+
+const plusMinusBtn = document.querySelector("#plus-minus-btn");
+
+//function to handle change to negative...
 
 // TO USE FOR KEYBOARD INPUT
 // document.body.onkeydown = (e) => setCurrentKey(e.key);

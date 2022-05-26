@@ -74,6 +74,8 @@ body {
 #calc-display {
   background-color: var(--primary-light);
   grid-column: 1 / 5;
+  display:flex;
+  position: relative;
   text-align: right;
 }
 
@@ -84,7 +86,9 @@ body {
 }
 
 #answer {
-  text-align: right;
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
 
 button {

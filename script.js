@@ -88,6 +88,7 @@ function operate(operator, firstArg, secondArg) {
 			break;
 		case "*":
 			return multiply(firstArg, secondArg);
+			break;
 		case "/":
 			return divide(firstArg, secondArg);
 			break;
@@ -108,7 +109,7 @@ function updateOperands(value) {
 }
 
 document.querySelectorAll(".operator-btn").forEach((item) => {
-	item.addEventListener("click", (event) => {
+	item.addEventListener("click", () => {
 		updateOperator(item.textContent);
 	});
 });
@@ -151,7 +152,7 @@ function roundTo5decimalsMax(halfProduct) {
 	return halfProduct / 100000;
 }
 
-eqlBtn.onclick = function () {
+equalBtn.onclick = function () {
 	if (
 		firstOperandSpan.textContent != "" &&
 		operatorSpan.textContent != "" &&
@@ -217,4 +218,8 @@ const plusMinusBtn = document.querySelector("#plus-minus-btn");
 
 window.onload = () => {
 	setCalcDisplay(DEFAULT_DISPLAY);
+};
+
+document.body.onclick = function (event) {
+	console.log(event);
 };

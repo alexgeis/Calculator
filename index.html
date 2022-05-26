@@ -1,53 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style.css" />
-    <title>Calcutron 3000</title>
-  </head>
-  <body>
-    <header id="header">
-      <h1>Calculator</h1>
-    </header>
-    <main class="container gradient">
-      <div id="calc-container">
-        <div id="Calculator">
-          <div id="calc-display"></div>
-          <button id="clear-btn" data-value="clear">AC</button>
-          <button id="plus-minus-btn" data-value="plus-minus">+/-</button>
-          <button id="modulo-btn" data-value="%">%</button>
-          <button id="divide-btn" data-value="/">/</button>
-          <button id="seven-btn" data-value="7">7</button>
-          <button id="eight-btn" data-value="8">8</button>
-          <button id="nine-btn" data-value="9">9</button>
-          <button id="multiply-btn" data-value="*">*</button>
-          <button id="four-btn" data-value="4">4</button>
-          <button id="five-btn" data-value="5">5</button>
-          <button id="six-btn" data-value="6">6</button>
-          <button id="minus-btn" data-value="-">-</button>
-          <button id="one-btn" data-value="1">1</button>
-          <button id="two-btn" data-value="2">2</button>
-          <button id="three-btn" data-value="3">3</button>
-          <button id="plus-btn" data-value="+">+</button>
-          <button id="zero-btn" data-value="0">0</button>
-          <button id="decimal-btn" data-value=".">.</button>
-          <button id="equal-btn" data-value="=">=</button>
-        </div>
-      </div>
-    </main>
-    <footer class="footer" id="footer">
-      <p>
-        Copyright ©
-        <span id="currentYear"></span>
-        Alex Geis
-      </p>
-      <a href="https://github.com/alexgeis" target="_blank">
-        <img src="./assets/GitHub-Mark-64px.png" alt="Github logo"
-      /></a>
-    </footer>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./style.css" />
+		<title>Calcutron 3000</title>
+	</head>
+	<body>
+		<header id="header">
+			<h1>Calculator</h1>
+		</header>
+		<main class="container gradient">
+			<div id="calc-container">
+				<div id="Calculator">
+					<div id="calc-display"></div>
+					<button class="calc-button" id="clear-btn" data-value="clear">
+						AC
+					</button>
+					<button
+						class="calc-button"
+						id="plus-minus-btn"
+						data-value="plus-minus"
+					>
+						+/-
+					</button>
+					<button class="calc-btn" id="modulo-btn" data-value="%">%</button>
+					<button class="calc-btn" id="divide-btn" data-value="/">/</button>
+					<button class="calc-btn" id="seven-btn" data-value="7">7</button>
+					<button class="calc-btn" id="eight-btn" data-value="8">8</button>
+					<button class="calc-btn" id="nine-btn" data-value="9">9</button>
+					<button class="calc-btn" id="multiply-btn" data-value="*">*</button>
+					<button class="calc-btn" id="four-btn" data-value="4">4</button>
+					<button class="calc-btn" id="five-btn" data-value="5">5</button>
+					<button class="calc-btn" id="six-btn" data-value="6">6</button>
+					<button class="calc-btn" id="minus-btn" data-value="-">-</button>
+					<button class="calc-btn" id="one-btn" data-value="1">1</button>
+					<button class="calc-btn" id="two-btn" data-value="2">2</button>
+					<button class="calc-btn" id="three-btn" data-value="3">3</button>
+					<button class="calc-btn" id="plus-btn" data-value="+">+</button>
+					<button class="calc-btn" id="zero-btn" data-value="0">0</button>
+					<button class="calc-btn" id="decimal-btn" data-value=".">.</button>
+					<button class="calc-btn" id="equal-btn" data-value="=">=</button>
+				</div>
+			</div>
+		</main>
+		<footer class="footer" id="footer">
+			<p>
+				Copyright ©
+				<span id="currentYear"></span>
+				Alex Geis
+			</p>
+			<a href="https://github.com/alexgeis" target="_blank">
+				<img src="./assets/GitHub-Mark-64px.png" alt="Github logo"
+			/></a>
+		</footer>
 
-    <script src="./script.js"></script>
-  </body>
+		<script src="./script.js"></script>
+	</body>
 </html>

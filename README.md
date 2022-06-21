@@ -6,12 +6,6 @@ Deployed Link &rarr; [Calcutron 3000](https://alexgeis.github.io/Calculator/)
 
 ## Future Development
 
-- +/- button functionality - should turn current value from positive to negative, and vice versa.
-
-- keyboard listeners - allow the user to use the keyboard to enter calculations
-
-- style update - box shadow, better text formatting for the calc display, etc.
-
 <div id="top"></div>
 
 <!-- PROJECT SHIELDS -->
@@ -63,13 +57,13 @@ Deployed Link &rarr; [Calcutron 3000](https://alexgeis.github.io/Calculator/)
         <li><a href="#built-with">Built With</a></li>
       </ul>
     </li>
-    <li>
+    <!-- <li>
       <a href="#getting-started">Getting Started</a>
       <ul>
         <li><a href="#prerequisites">Prerequisites</a></li>
         <li><a href="#installation">Installation</a></li>
       </ul>
-    </li>
+    </li> -->
     <li><a href="#usage">Usage</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contributing">Contributing</a></li>
@@ -109,7 +103,7 @@ Search and replace keywords: `deployed_link`, `product-screenshot`, `Calculator`
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
-
+<!--
 ## Getting Started
 
 Instructions on setting up your project locally.
@@ -140,15 +134,15 @@ This is an example of how to list things you need to use the software and how to
    const API_KEY = "ENTER YOUR API";
    ```
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+<p align="right">(<a href="#top">back to top</a>)</p> -->
 
 <!-- USAGE EXAMPLES -->
 
 ## Usage
 
-Useful examples of how a project can be used. Additional screenshots, code examples, demos, and/or links to more resources.
+Calculator buttons can be clicked to perform math functions and output results. (it's a calculator)
 
-_For more examples, please refer to the [Documentation](https://example.com)_
+<!-- _For more examples, please refer to the [Documentation](https://example.com)_ -->
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -156,12 +150,13 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 
 ## Roadmap
 
-- [x] Feature 1
-- [ ] Feature 2
-- [ ] Feature 3
-  - [ ] Nested Feature
+- [ ] +/- button functionality - should turn current value from positive to negative, and vice versa.
+- [ ] keyboard listeners - allow the user to use the keyboard to enter calculations
+- [ ] style update
+  - [ ] box shadow
+  - [ ] better text formatting for the calc display
 
-See the [open issues](https://github.com/alexgeis/Calculator/issues) for a full list of proposed features (and known issues).
+<!-- See the [open issues](https://github.com/alexgeis/Calculator/issues) for a full list of proposed features (and known issues). -->
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 

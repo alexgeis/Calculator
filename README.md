@@ -33,7 +33,7 @@ Deployed Link &rarr; [Calcutron 3000](https://alexgeis.github.io/Calculator/)
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/alexgeis/repo_name">
+  <a href="https://github.com/alexgeis/Calculator">
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
@@ -42,14 +42,14 @@ Deployed Link &rarr; [Calcutron 3000](https://alexgeis.github.io/Calculator/)
   <p align="center">
     Simple calculator application.
     <br />
-    <a href="https://github.com/alexgeis/repo_name"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/alexgeis/Calculator"><strong>Explore the docs »</strong></a>
     <br />
     <br />
     <a id="deployed_link" href="https://alexgeis.github.io/Calculator/">View Demo</a>
     ·
-    <a href="https://github.com/alexgeis/repo_name/issues">Report Bug</a>
+    <a href="https://github.com/alexgeis/Calculator/issues">Report Bug</a>
     ·
-    <a href="https://github.com/alexgeis/repo_name/issues">Request Feature</a>
+    <a href="https://github.com/alexgeis/Calculator/issues">Request Feature</a>
   </p>
 </div>
 
@@ -92,7 +92,7 @@ style="display: block;
     margin-right: auto;
     width: 60%;"/></p></a>
 
-Search and replace keywords: `deployed_link`, `product-screenshot`, `repo_name`, `Calculator`, `Simple calculator application.`
+Search and replace keywords: `deployed_link`, `product-screenshot`, `Calculator`, `Calculator`, `Simple calculator application.`
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -129,7 +129,7 @@ This is an example of how to list things you need to use the software and how to
 1. Get a free API Key at [https://example.com](https://example.com)
 2. Clone the repo
    ```sh
-   git clone https://github.com/alexgeis/repo_name.git
+   git clone https://github.com/alexgeis/Calculator.git
    ```
 3. Install NPM packages
    ```sh
@@ -161,7 +161,7 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 - [ ] Feature 3
   - [ ] Nested Feature
 
-See the [open issues](https://github.com/alexgeis/repo_name/issues) for a full list of proposed features (and known issues).
+See the [open issues](https://github.com/alexgeis/Calculator/issues) for a full list of proposed features (and known issues).
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -203,7 +203,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 Alex Geis - siegxela@gmail.com
 
-Project Link: [https://github.com/alexgeis/repo_name](https://github.com/alexgeis/repo_name)
+Project Link: [https://github.com/alexgeis/Calculator](https://github.com/alexgeis/Calculator)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -228,17 +228,17 @@ Helpful resources and kudos.
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 
-<!-- [contributors-shield]: https://img.shields.io/github/contributors/alexgeis/repo_name.svg?style=for-the-badge
-[contributors-url]: https://github.com/alexgeis/repo_name/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/alexgeis/repo_name.svg?style=for-the-badge
-[forks-url]: https://github.com/alexgeis/repo_name/network/members
-[stars-shield]: https://img.shields.io/github/stars/alexgeis/repo_name.svg?style=for-the-badge
-[stars-url]: https://github.com/alexgeis/repo_name/stargazers -->
+<!-- [contributors-shield]: https://img.shields.io/github/contributors/alexgeis/Calculator.svg?style=for-the-badge
+[contributors-url]: https://github.com/alexgeis/Calculator/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/alexgeis/Calculator.svg?style=for-the-badge
+[forks-url]: https://github.com/alexgeis/Calculator/network/members
+[stars-shield]: https://img.shields.io/github/stars/alexgeis/Calculator.svg?style=for-the-badge
+[stars-url]: https://github.com/alexgeis/Calculator/stargazers -->
 
-[issues-shield]: https://img.shields.io/github/issues/alexgeis/repo_name.svg?style=for-the-badge
-[issues-url]: https://github.com/alexgeis/repo_name/issues
-[license-shield]: https://img.shields.io/github/license/alexgeis/repo_name.svg?style=for-the-badge
-[license-url]: https://github.com/alexgeis/repo_name/blob/master/LICENSE.txt
+[issues-shield]: https://img.shields.io/github/issues/alexgeis/Calculator.svg?style=for-the-badge
+[issues-url]: https://github.com/alexgeis/Calculator/issues
+[license-shield]: https://img.shields.io/github/license/alexgeis/Calculator.svg?style=for-the-badge
+[license-url]: https://github.com/alexgeis/Calculator/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/alexngeis
 [product-screenshot]: /assets/Calcutron-3000.png

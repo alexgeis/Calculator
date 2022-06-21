@@ -84,13 +84,7 @@ Search and replace keywords: `deployed_link`, `product-screenshot`, `Calculator`
 
 ### Built With
 
-- [React.js](https://reactjs.org/)
-- [Bootstrap](https://getbootstrap.com)
-- [Node.js](https://nodejs.dev/)
-- [Express](https://expressjs.com/)
-- [MongoDB](https://www.mongodb.com/)
-- [MySQL](https://www.mysql.com/)
-- [JQuery](https://jquery.com)
+Vanilla Javascript, CSS, and HTML.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 

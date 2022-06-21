@@ -1,11 +1,3 @@
-#
-
-Deployed Link &rarr; [Calcutron 3000](https://alexgeis.github.io/Calculator/)
-
-![Calcultron 3000 Screenshot](/assets/Calcutron-3000.png)
-
-## Future Development
-
 <div id="top"></div>
 
 <!-- PROJECT SHIELDS -->
@@ -211,12 +203,6 @@ Helpful resources and kudos.
 - [Choose an Open Source License](https://choosealicense.com)
 - [Img Shields](https://shields.io)
 - [GitHub Pages](https://pages.github.com)
-- [Font Awesome](https://fontawesome.com)
-- [React Icons](https://react-icons.github.io/react-icons/search)
-- [Markdown Studio](https://readme.so/editor)
-- []()
-- []()
-- []()
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 

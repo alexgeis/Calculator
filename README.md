@@ -78,8 +78,6 @@ style="display: block;
     margin-right: auto;
     width: 60%;"/></p></a>
 
-Search and replace keywords: `deployed_link`, `product-screenshot`, `Calculator`, `Calculator`, `Simple calculator application.`
-
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 ### Built With
